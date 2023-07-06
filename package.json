@@ -1,0 +1,31 @@
+{
+  "name": "frontend-project-11",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/VanHadsoN/frontend-project-11/workflows/hexlet-check/badge.svg)](https://github.com/VanHadsoN/frontend-project-11/actions)\r ### Code Climate:\r <a href=\"https://codeclimate.com/github/VanHadsoN/frontend-project-11/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/b2ba7ca973b9e905b9d7/maintainability\" /></a>",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Konstantin Stasenko",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0"
+  }
+}
