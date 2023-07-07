@@ -1,4 +1,4 @@
-/* eslint no-console: "error" */
+import './styles.scss';
+import 'bootstrap';
 
-// custom console
 Console.log('Hello world!');
