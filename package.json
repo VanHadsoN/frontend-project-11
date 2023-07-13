@@ -41,6 +41,7 @@
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.7.6",
     "on-change": "^4.0.2",
+    "react-i18next": "^13.0.2",
     "yup": "^1.2.0"
   }
 }
