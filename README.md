@@ -16,7 +16,7 @@ Node.js 14+
 1) Clone this repository to your filesystem:
 
 ```sh
-git clone git@github.com:VanHadsoN/frontend-project-46.git
+git clone git@github.com:VanHadsoN/frontend-project-11.git
 ```
 2) Go to directory `frontend-project-11`:
  
