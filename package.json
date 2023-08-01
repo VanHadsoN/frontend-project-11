@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/VanHadsoN/frontend-project-11/workflows/hexlet-check/badge.svg)](https://github.com/VanHadsoN/frontend-project-11/actions)\r ### Code Climate:\r <a href=\"https://codeclimate.com/github/VanHadsoN/frontend-project-11/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/b2ba7ca973b9e905b9d7/maintainability\" /></a>",
+  "description": "RSS-aggregator",
   "main": "index.js",
   "type": "module",
   "scripts": {
