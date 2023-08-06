@@ -118,7 +118,7 @@ export default () => {
         })
         .then((response) => {
           const data = response.data.contents;
-          const { feed, posts } = parser(data, i18nInstance, elements);
+          const { feed, posts } = parser(data);
           const feedId = uniqueId();
 
           watchedState.content.feeds.push({ ...feed, feedId, link: watchedState.inputValue });
