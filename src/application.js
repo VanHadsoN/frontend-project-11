@@ -40,6 +40,10 @@ const getNewPosts = (state) => {
         if (newPosts.length > 0) {
           createPosts(state, newPosts, feedId);
         }
+      })
+      .catch((error) => {
+        const message = error.isGettingNewPostsError ? 'gettingNewPostsError' : error.message;
+        state.error = message;
       }));
 
   Promise.allSettled(promises)
