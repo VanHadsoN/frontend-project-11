@@ -103,10 +103,14 @@ export default () => {
     const watchedState = onChange(initialState, render(elements, initialState, i18nInstance));
     getNewPosts(watchedState);
 
-    elements.form.addEventListener('submit', (e) => {
+    elements.form.addEventListener('input', (e) => {
       e.preventDefault();
       watchedState.process.processState = 'filling';
       watchedState.inputValue = e.target.value;
+    });
+
+    elements.form.addEventListener('submit', (e) => {
+      e.preventDefault();
       const urlList = watchedState.content.feeds.map(({ link }) => link);
 
       validate(watchedState.inputValue, urlList)
