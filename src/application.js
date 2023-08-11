@@ -112,6 +112,7 @@ export default () => {
     elements.form.addEventListener('submit', (e) => {
       e.preventDefault();
       const urlList = watchedState.content.feeds.map(({ link }) => link);
+      watchedState.process.processState = 'loading';
 
       validate(watchedState.inputValue, urlList)
         .then(() => {
