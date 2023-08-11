@@ -113,6 +113,7 @@ export default () => {
       e.preventDefault();
       const urlList = watchedState.content.feeds.map(({ link }) => link);
       watchedState.process.processState = 'loading';
+      watchedState.inputValue = e.target.value;
 
       validate(watchedState.inputValue, urlList)
         .then(() => {
