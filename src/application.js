@@ -106,7 +106,6 @@ export default () => {
     elements.form.addEventListener('input', (e) => {
       e.preventDefault();
       watchedState.process.processState = 'filling';
-      watchedState.inputValue = e.target.value;
     });
 
     elements.form.addEventListener('submit', (e) => {
