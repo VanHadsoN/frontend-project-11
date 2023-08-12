@@ -128,6 +128,9 @@ const handlerProcessState = (elements, state, value, i18nInstance) => {
     case 'error':
       handlerFinishWithError(elements, state.process.error, i18nInstance);
       break;
+    case 'blocked':
+      elements.button.getAttribute('disabled');
+      break;
     case 'sending':
       elements.button.getAttribute('disabled');
       elements.input.getAttribute('readonly');

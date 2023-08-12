@@ -111,6 +111,7 @@ export default () => {
 
     elements.form.addEventListener('submit', (e) => {
       e.preventDefault();
+      watchedState.process.processState = 'blocked';
       const urlList = watchedState.content.feeds.map(({ link }) => link);
 
       validate(watchedState.inputValue, urlList)
