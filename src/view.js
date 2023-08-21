@@ -130,6 +130,7 @@ const handlerProcessState = (elements, state, value, i18nInstance) => {
       break;
     case 'blocked':
       elements.button.getAttribute('disabled');
+      elements.input.getAttribute('disabled');
       break;
     case 'sending':
       elements.button.getAttribute('disabled');
