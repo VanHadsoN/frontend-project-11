@@ -6,8 +6,7 @@ export default (data) => {
     const error = new Error(parserError.textContent);
     error.isParsingError = true;
     error.data = data;
-    error.name = 'parseError';
-    throw new Error('error');
+    throw new Error('parseError', error);
   }
   const channel = parsedData.querySelector('channel');
   const feedTitle = channel.querySelector('title').textContent;
