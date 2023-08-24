@@ -3,7 +3,11 @@ export default (data) => {
   const parsedData = parser.parseFromString(data, 'application/xml');
   const parserError = parsedData.querySelector('parsererror');
   if (parserError) {
-    throw new Error('parseError');
+    const error = new Error(parserError.textContent);
+    error.isParsingError = true;
+    error.data = data;
+    error.name = 'parseError';
+    throw new Error('error');
   }
   const channel = parsedData.querySelector('channel');
   const feedTitle = channel.querySelector('title').textContent;
