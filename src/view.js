@@ -120,22 +120,23 @@ const handlerFinishWithError = (elements, error, i18nInstance) => {
 
 const handlerProcessState = (elements, state, value, i18nInstance) => {
   switch (value) {
-    case 'filling':
+    case 'filling': // форма в состоянии заполнения, кнопка активна
+      elements.button.disabled = false;
       break;
-    case 'finished':
+    case 'finished': // успех, кнопка и инпут активны
+      elements.button.disabled = false;
+      elements.input.disabled = false;
       handlerSuccessFinish(elements, i18nInstance);
       break;
     case 'error':
       handlerFinishWithError(elements, state.process.error, i18nInstance);
       break;
-    case 'blocked':
-      elements.button.getAttribute('disabled');
-      elements.input.getAttribute('disabled');
+    case 'blocked': // и кнопка и инпут не активны перед валидацией
       elements.button.disabled = true;
       elements.input.disabled = true;
       break;
-    case 'sending':
-      elements.button.getAttribute('disabled');
+    case 'sending': // кнопка не активна, т.к. происходит отправка на сервер
+      elements.button.disabled = true;
       elements.input.getAttribute('readonly');
       break;
     default:
