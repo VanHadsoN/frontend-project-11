@@ -129,6 +129,8 @@ const handlerProcessState = (elements, state, value, i18nInstance) => {
       handlerSuccessFinish(elements, i18nInstance);
       break;
     case 'error':
+      elements.button.disabled = false;
+      elements.input.disabled = false;
       handlerFinishWithError(elements, state.process.error, i18nInstance);
       break;
     case 'blocked': // и кнопка и инпут не активны перед валидацией
